@@ -1,4 +1,4 @@
-import { Stack } from '@mui/material'
+import { Stack, Typography } from '@mui/material'
 import React from 'react'
 
 const BodyPart = ({ item, bodyPart, setBodyPart}) => {
@@ -17,8 +17,20 @@ const BodyPart = ({ item, bodyPart, setBodyPart}) => {
             cursor: 'pointer',
             gap: '47px'
         }}
+        onClick={() => {
+            setBodyPart(item);
+            window.scrollTo({top: 1800, left: 100, behavior: 'smooth'})
+        }}
     >
-        <img alt="dumbbell" styles={{ width: '40px', height: '40px'}} />
+        <img alt="dumbbell" style={{ width: '40px', height: '40px'}} />
+        <Typography
+            fontSize="24px"
+            fontWeight="bold"
+            color="#2A1212"
+            textTransform="capitalize"
+        >
+            {item}
+        </Typography>
     </Stack>
   )
 }

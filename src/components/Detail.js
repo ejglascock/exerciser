@@ -60,8 +60,8 @@ const Detail = ({ exerciseDetail }) => {
                     >
                         <img 
                             src={item.icon} 
-                            alt={bodyPart} 
-                            style={{ width: '50px', height: '50px' }} 
+                            alt={item.name} 
+                            style={{ width: '50px', height: '50px' }}
                         />
                     </Button>
                     <Typography textTransform="capitalize" variant="h5" >

@@ -35,12 +35,12 @@ const Detail = ({ exerciseDetail }) => {
     >
         <img src={gifUrl} alt={name} loading="lazy" className="detail-image" />
         <Stack sx={{ gap: { lg: '35px', xs: '20px' } }} >
-            <Typography variant="h3" >
+            <Typography sx={{ fontSize: { lg: '64px', xs: '30px' } }} fontWeight={700} textTransform="capitalize" >
                 {name}
             </Typography>
             <Typography variant="h6" >
                 Exercises keep you strong. 
-                {` ${name}`} is one of the best exercises to target your {target}. 
+                The <span style={{color: '#ff2625', textTransform: 'capitalize'}} >{`${name}`}</span> is one of the best exercises to target your {target}. 
                 It will help you improve your mood and gain energy.
             </Typography>
             {extraDetail.map((item) => (

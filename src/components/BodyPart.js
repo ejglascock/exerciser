@@ -1,5 +1,6 @@
 import { Stack, Typography } from '@mui/material'
 import React from 'react'
+import allIcon from '../assets/icons/all.png'
 
 const BodyPart = ({ item, bodyPart, setBodyPart}) => {
   return (
@@ -22,7 +23,7 @@ const BodyPart = ({ item, bodyPart, setBodyPart}) => {
             window.scrollTo({top: 1800, left: 100, behavior: 'smooth'})
         }}
     >
-        <img alt="dumbbell" style={{ width: '40px', height: '40px'}} />
+        <img src={allIcon} alt="dumbbell" style={{ width: '40px', height: '40px'}} />
         <Typography
             fontSize="24px"
             fontWeight="bold"

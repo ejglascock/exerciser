@@ -1,9 +1,9 @@
 import { Button, Stack, Typography } from '@mui/material'
 import React from 'react'
 
-const BodyPartImage = ""
-const TargetImage = ""
-const EquipmentImage = ""
+import bodyIcon from '../assets/icons/body.png';
+import targetIcon from '../assets/icons/target.png';
+import equipmentIcon from '../assets/icons/equipment.png';
 
 
 const Detail = ({ exerciseDetail }) => {
@@ -11,15 +11,15 @@ const Detail = ({ exerciseDetail }) => {
 
   const extraDetail = [
     {
-        icon: BodyPartImage,
+        icon: bodyIcon,
         name: bodyPart
     },
     {
-        icon: TargetImage,
+        icon: targetIcon,
         name: target
     },
     {
-        icon: EquipmentImage,
+        icon: equipmentIcon,
         name: equipment
     }
   ]
